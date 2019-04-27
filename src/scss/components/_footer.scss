@@ -1,0 +1,69 @@
+//================== Style pour le pied de page version mobile ==========================
+
+
+footer {
+  background: $fond-foncer;
+
+  div {
+
+    p {
+      color: $white;
+      margin: 0;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100px;
+      }
+
+    }
+
+    i {
+      color: $jaune;
+      font-size: $fz-gros;
+      text-align: center;
+
+      &:hover {
+        color: $white;
+        transition: all 0.3s linear 0s;
+      }
+    }
+  }
+
+}
+
+//------------------FOOTER DE CERTAIN SEULEMENT (pour enlever le gap)
+
+.footer {
+
+  position: absolute;
+  top: 800px;
+  width: 100%;
+
+}
+
+//================== Style pour le pied de page version web ==========================
+@media screen and (min-width: $breakpoint-md) {
+  footer {
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+  }
+
+  .footer {
+    top: 1030px;
+  }
+
+}
+

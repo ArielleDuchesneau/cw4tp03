@@ -1,0 +1,22 @@
+// STYLE DE BASE SUR LA BALISE BODY
+
+body{
+
+  text-transform: uppercase;
+
+  @include font($ff-normal, $fz-normal, $color-text-normal, $lh-normal);
+
+  background-color: $fond-foncer;
+
+  p{
+    color: $white;
+    text-transform: none;
+  }
+
+
+
+
+
+}
+
+

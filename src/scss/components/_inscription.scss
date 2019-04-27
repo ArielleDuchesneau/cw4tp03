@@ -1,0 +1,35 @@
+
+.header-inscription {
+
+
+  .boutonInscript {
+    display: flex;
+    align-items: center;
+
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+
+
+    input.telechargement{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .submit {
+
+      width: 150px;
+    }
+
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .inscription{
+    max-width: 800px;
+  }
+}
+

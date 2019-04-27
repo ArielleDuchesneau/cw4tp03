@@ -1,0 +1,146 @@
+// All Form Elements
+
+//--------------------Submit-------------------------------
+
+[type="submit"] {
+  background: $black;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  &:hover {
+    background: $white;
+  }
+}
+
+//----------------------FILE-----------------------------
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  display: inline-block;
+  position: relative;
+
+  background: $white;
+  border: none;
+  border-radius: 5px;
+
+
+  font-family: $ff-normal;
+  letter-spacing: 0.05em;
+  font-size: $fz-small;
+  color: #fff;
+  cursor: pointer;
+
+
+  margin-bottom: 1rem;
+  padding: 1rem 20px;
+  outline: none;
+
+  transition: all 0.3s;
+  vertical-align: middle;
+
+  max-width: 220px;
+
+  &:hover {
+    background-color: $jaune;
+  }
+
+}
+//---------------------------------------------------
+
+label,
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: $jaune;
+  font: inherit;
+  margin: 0;
+  border-radius: 0;
+  transition: .3s all;
+
+}
+// Inputs
+[type="text"],
+[type="email"],
+[type="password"],
+[type="tel"],
+[type="number"],
+[type="date"],
+[type="search"] {
+
+  height: $base-input-height;
+  padding: 8px;
+  background-color: $white;
+  //border: $beige-foncer solid $beige-foncer;
+  border-radius: $base-input-border-radius;
+  -webkit-appearance: none;
+
+  -moz-appearance: textfield;
+  &:focus {
+    background-color: $white;
+    //border-color: $base-input-border-focus-color;
+    outline: 0;
+  }
+}
+
+// Textarea
+textarea {
+  padding: 8px;
+  background-color: $white;
+  //border: $base-input-border-size solid $base-input-border-color;
+  border-radius: $base-input-border-radius;
+  overflow: auto;
+  &:focus {
+    background-color: $white;
+    //border-color: $base-input-border-focus-color;
+    outline: 0;
+  }
+}
+
+// Select
+select {
+  text-transform: none;
+  height: $base-input-height;
+  padding: 0 8px;
+  background-color: $white;
+  //border: $base-input-border-size solid $base-input-border-color;
+  border-radius: $base-input-border-radius;
+  &:focus {
+    background-color: $white;
+    //border-color: $base-input-border-focus-color;
+    outline: 0;
+  }
+}
+
+// Buttons
+button {
+  border-radius: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.disabled,
+[disabled] {
+  opacity: .4;
+  user-select: none;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+// Placeholders
+::placeholder {
+  color: $black;
+}

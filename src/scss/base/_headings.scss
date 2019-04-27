@@ -1,0 +1,26 @@
+// LES STYLES DE BASE DES BALISES <h>
+
+
+
+
+h1{
+  font-size: rem(20);
+}
+
+h2{
+  font-size: rem(42);
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: rem(18);
+
+}
+
+
+h1,h2,h3{
+  letter-spacing: 1.5px;
+  font-family: $ff-title;
+  color: $jaune;
+
+}

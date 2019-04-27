@@ -1,0 +1,38 @@
+////================== Section information principal d'un film ==========================
+body{
+.information{
+
+  background-color: $fond-gris;
+
+  .wrapper{
+
+    display: flex;
+    flex-direction: column;
+
+
+    h2{
+      margin: 0;
+      text-align: center;
+      padding-top:20px;
+    }
+
+
+    div{
+      width: 220px;
+      display: flex;
+      align-self: center;
+      justify-content: space-around;
+
+      p{
+        color: $gris;
+        padding-bottom: 10px;
+        margin: 0;
+        text-align: center;
+      }
+
+
+    }
+
+  }
+}
+}

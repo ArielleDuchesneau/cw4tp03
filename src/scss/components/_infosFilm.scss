@@ -1,0 +1,115 @@
+////================== Style pour la section detaillée d'un film ==========================
+body {
+
+  section.detail {
+    background-color: $fond-gris;
+
+    aside {
+      p {
+        color: $jaune;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        &:last-child {
+          padding-bottom: 20px;
+        }
+      }
+
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .principale {
+        padding: 0 10px;
+      }
+      article {
+        flex-basis: 100%;
+      }
+
+      div {
+        align-self: center;
+
+
+      }
+    }
+  }
+}
+
+//new
+table {
+  border-collapse: collapse;
+  color: $jaune;
+
+
+  margin: 10px;
+
+  th, td {
+    padding: 2px;
+    text-align: center;
+  }
+
+  td{
+    text-transform: none;
+  }
+
+  .top{
+    background: $jaune;
+    color: $fond-foncer;
+  }
+}
+
+table, th, td {
+  border: 1px solid $jaune;
+
+}
+
+//-------------------------------------------------- Media querries pour tablette
+@media screen and (min-width: $breakpoint-md) {
+  body {
+
+    section.detail {
+
+      aside {
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .wrapper {
+        flex-direction: row;
+
+        article {
+          img{
+            padding: 0 0 0 10px;
+          }
+          flex-basis: 50%;
+          padding-bottom: 20px;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+@media screen and (min-width: $breakpoint-md) {
+  table {
+
+
+    margin: 20px;
+
+    th, td {
+      padding: 15px;
+
+    }
+
+  }
+
+}
+

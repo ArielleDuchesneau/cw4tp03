@@ -1,0 +1,204 @@
+//STYLE DE NOTRE HEADER
+
+.header-page {
+  background: white;
+  padding: 10px 0 10px 0;
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  font-family: $ff-title;
+  color: $fond-foncer;
+
+  z-index: 100;
+
+  nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .menu {
+      margin: 0 10px 0 0;
+    }
+
+    .ouvre-menu {
+      display: none;
+
+    }
+
+    .ouvre-menu + ul {
+      display: none;
+    }
+
+    .ouvre-menu:checked + ul {
+      display: block;
+
+    }
+    .logo {
+
+
+      a {
+
+        transition: all 0.4s ease-in-out;
+        color: $fond-foncer;
+        &:hover{
+          color: $jaune;
+
+        }
+      }
+
+      margin: 0 0 0 10px;
+
+
+
+
+    }
+
+    .firstUl {
+      position: absolute;
+      top: 50px;
+      z-index: 1;
+
+      background: white;
+
+      margin: 0;
+      padding: 10px 0 10px 0;
+      list-style: none;
+
+      width: 100%;
+      text-align: center;
+
+      a {
+        color: $fond-foncer;
+        position: relative;
+
+
+
+        &:after{
+          content: '';
+          position: absolute;
+          width: 0; height: 2px;
+          display: block;
+          margin-top: 1px;
+          right: 0;
+          background: $jaune;
+          transition: width .2s ease;
+          -webkit-transition: width .2s ease;
+        }
+
+        &:hover:after{
+          width: 100%;
+          left: 0;
+          background: $jaune;
+        }
+
+      }
+
+      .fa-user {
+        margin: 0 0 0 10px;
+        font-size: $fz-normal;
+
+      }
+
+      li {
+
+        padding-bottom: 10px;
+
+
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-md) {
+
+  .header-page {
+    transition: all 0.3s linear 0s;
+    nav {
+      flex-direction: column;
+      align-items: center;
+
+      .menu {
+        display: none;
+
+      }
+      .ouvre-menu + ul {
+        display: flex;
+        width: 100%;
+      }
+      .ouvre-menu:checked + ul {
+        display: flex;
+      }
+
+      .firstUl {
+        //background: $jaune;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        li {
+          position: relative;
+
+          & > ul {
+            position: absolute;
+            top: 100%;
+            left: -10px;
+
+            //background-color: $jaune;
+
+            min-width: 120px;
+          }
+        }
+      }
+
+    }
+    &:hover {
+      background: white;
+
+      .logo {
+        a {
+          color: $fond-foncer;
+        }
+      }
+
+      a {
+        color: $fond-foncer;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .header-page {
+
+    nav {
+      flex-direction: row;
+      .firstUl {
+        justify-content: flex-end;
+        position: relative;
+        top: 0;
+
+        padding: 0 15px 0 0;
+        margin: 0;
+        li {
+          padding: 0 15px 0 15px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
