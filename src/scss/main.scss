@@ -22,22 +22,10 @@
 @import "base/form";
 
 // COMPONENTS
-@import "components/header-page";
-@import "components/connexion";
-@import "components/inscription";
+@import "components/menu";
+@import "components/hero";
 @import "components/banniere";
-@import "components/articles-populaires";
-@import "components/footer";
-@import "components/media";
-@import "components/infoPrinncipal";
-@import "components/infosFilm";
-@import "components/commentaire";
-@import "components/exempleCommentaire";
-@import "components/presentation";
-@import "components/acteurs";
-@import "components/template";
-@import "components/carousel";
-
+@import "components/principal";
 // UTILITIES
 @import "utilities/hide";
 @import "utilities/print";

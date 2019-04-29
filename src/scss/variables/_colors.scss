@@ -18,7 +18,11 @@ $black:    #000;
 $jaune:rgb(216, 176, 105);
 $fond-foncer:#121212 ;
 $fond-gris: #191919;
-$gris: #6c757d;
+$gris: #474747;
+$rose:#f17688;
+$vert:#41a839;
+$bleu:#68c0d4;
+
 
 
 $color-text-normal: $gray-800;
@@ -29,10 +33,10 @@ $color-bg-page: $white;
 $color-title-light: $gray-100;
 $color-title-dark: $gray-800;
 
-$color-link: $fond-foncer;
+$color-link: $gris;
 $color-link-visited: $color-link;
-$color-link-hover: darken($color-link, 5%);
-$color-link-active: darken($color-link, 15%);
+$color-link-hover: $bleu;
+$color-link-active: $color-link;
 $color-link-focus: $color-link;
 
 

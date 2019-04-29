@@ -1,10 +1,9 @@
 // LES STYLES DE BASE DES BALISES <h>
 
-
-
-
 h1{
-  font-size: rem(20);
+  font-size: 48pt;
+  text-transform: uppercase;
+
 }
 
 h2{
@@ -13,14 +12,15 @@ h2{
 }
 
 h3{
-  font-size: rem(18);
+  font-size: 36pt;
+
 
 }
 
 
 h1,h2,h3{
-  letter-spacing: 1.5px;
+  margin: 0;
   font-family: $ff-title;
-  color: $jaune;
+  color: white;
 
 }

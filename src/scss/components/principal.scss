@@ -1,0 +1,21 @@
+.principal{
+  background-color: $bleu;
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    div{
+      width: 570px;
+    }
+
+  }
+
+}
+.pt1{
+
+}
+.pt2{
+  img{
+    max-width: 100px;
+    max-height: 100px;
+  }
+}

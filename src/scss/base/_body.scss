@@ -2,18 +2,16 @@
 
 body{
 
-  text-transform: uppercase;
-
   @include font($ff-normal, $fz-normal, $color-text-normal, $lh-normal);
 
-  background-color: $fond-foncer;
 
   p{
     color: $white;
-    text-transform: none;
   }
-
-
+  .petit{
+    width: 70px;
+    height: 70px;
+  }
 
 
 

@@ -1,0 +1,19 @@
+.hero{
+    background: url("../images/test.png") center no-repeat;
+  article{
+    padding: 70px 0;
+    background-color: #rose;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-height: 250px;
+      max-width: 250px;
+
+    }
+
+  }
+
+
+}
